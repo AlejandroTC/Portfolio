@@ -1,0 +1,30 @@
+---
+import Section from "@/components/Section.astro";
+import World from "@/icons/World.astro";
+import Contact from "@/components/sections/Contact.astro";
+---
+
+<Section>
+  <article class="flex flex-col md:flex-row items-center justify-between gap-4">
+    <div>
+      <h1 class="text-4xl font-bold mb-4">Alejandro Tamayo Castro</h1>
+      <h2 class="text-xl mb-1">FrontEnd Developer</h2>
+      <span class="flex flex-row items-center text-gray-500 gap-2 mb-2">
+        <World class="inline-block mr-2" />
+        Zacatecas, México
+      </span>
+      <div class="inline-flex align-baseline gap-4">
+        <Contact /> 
+      </div>
+      </div>
+    </div>
+    <figure>
+      <img
+        src="/public/me.webp"
+        alt="Alejandro Tamayo Castro"
+        class="rounded-lg shadow-lg w-32 aspect-[1/1] object-fit"
+      />
+    </figure>
+  </article>
+</Section>
+ 
