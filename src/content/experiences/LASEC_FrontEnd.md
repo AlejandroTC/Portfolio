@@ -8,4 +8,4 @@ location: Zacatecas
 country: México
 ---
 
-Diseño e implemento interfaces de usuario eficientes y responsivas utilizando la librería DevExtreme, integrando hubs de SignalR y consumiendo endpoints. Trabajo bajo un régimen de sprints con metodología ágil, colaborando estrechamente con el equipo para desarrollar soluciones optimizadas y garantizar una experiencia de usuario excepcional.
+Diseñé e implementé interfaces de usuario eficientes y responsivas utilizando la librería DevExtreme, integrando hubs de SignalR y consumiendo endpoints. Trabajé bajo un régimen de sprints con metodología ágil, colaborando estrechamente con el equipo para desarrollar soluciones optimizadas y garantizar una experiencia de usuario excepcional.

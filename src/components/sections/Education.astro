@@ -17,7 +17,7 @@ const renderedExperiences = await Promise.all(
 const sortedEducation = renderedExperiences.sort(
   (a, b) => b.data.from - a.data.from
 );
-console.log(sortedEducation);
+
 export const prerender = true;
 ---
 
