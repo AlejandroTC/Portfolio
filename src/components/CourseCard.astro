@@ -1,0 +1,11 @@
+---
+import ViewButton from "./ViewButton.astro";
+const { title, link, text, id = "" } = Astro.props;
+---
+
+<div class="rounded-xl bg-gray-200 p-4 flex flex-col justify-between gap-4">
+  <h4 class="text-lg font-semibold text-gray-800">
+    {title || "Course Title"}
+  </h4>
+  <ViewButton link={link} text={text} id={id} />
+</div>

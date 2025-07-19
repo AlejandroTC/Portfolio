@@ -1,0 +1,35 @@
+---
+import CourseCard from "../CourseCard.astro";
+import Section from "../Section.astro";
+---
+
+<Section title="Cursos">
+  <div class="flex flex-col gap-8 bg-gray-50 rounded-lg p-8">
+    <!-- Completed Courses -->
+    <h3>Completados</h3>
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+      <CourseCard
+        title="Google Cloud Skill Platform"
+        link="https://www.cloudskillsboost.google/public_profiles/ad02f51a-f388-4b99-97db-32c6785b14a1"
+        text="Ver Constancia"
+      />
+      <CourseCard
+        title="API Designer"
+        id="api-designer"
+        link="courses/completed/API_DESIGNER_APIACADEMY.pdf"
+        text="Ver Constancia"
+      />
+    </div>
+
+    <!-- Ongoing Courses -->
+    <h3>En Proceso</h3>
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+      <CourseCard
+        title="Diseñador de experiencia de usuario (UX)"
+        id="ux-course"
+        link="courses/ongoing/UXUI_CAPACITATEPARAELEMPLEO.pdf"
+        text="Ver Constancia"
+      />
+    </div>
+  </div>
+</Section>

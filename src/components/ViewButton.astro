@@ -1,0 +1,36 @@
+---
+import PDFVisor from "./PDFVisor.astro";
+const { link, text, id } = Astro.props;
+---
+
+<a
+  href={id ? "#" : link || "#"}
+  data-modal-id={id || ""}
+  data-pdf-link={link || ""}
+  class="btn-ver inline-block px-2 py-2 text-sm bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
+  target={id ? "_self" : "_blank"}
+  rel="noopener noreferrer"
+>
+  {text || "Ver"}
+</a>
+
+{id && <PDFVisor id={`modal-${id}`} link={link} />}
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll(".btn-ver").forEach((btn) => {
+      btn.addEventListener("click", (e) => {
+        const modalId = (btn as HTMLElement).dataset.modalId;
+        const pdfLink = (btn as HTMLElement).dataset.pdfLink;
+
+        if (modalId) {
+          e.preventDefault();
+          const modal = document.getElementById(`modal-${modalId}`);
+          if (modal) {
+            modal.classList.remove("hidden");
+          }
+        }
+      });
+    });
+  });
+</script>
