@@ -1,58 +1,50 @@
 ---
-import { getCollection, render } from "astro:content";
+import data from "@/content/experiences_data.json";
 import Section from "@/components/Section.astro";
+import WorkDot from "@/icons/WorkDot.astro";
 
-const experience = await getCollection("experiences");
-
-const renderedExperiences = await Promise.all(
-  experience.map(async (item) => {
-    const { Content } = await render(item);
-    return {
-      ...item,
-      Content,
-    };
-  })
-);
-
-const sortedExperience = renderedExperiences.sort(
-  (a, b) => b.data.from - a.data.from
-);
+const sortedExperience = data.sort((a, b) => b.from - a.from);
 
 export const prerender = true;
 ---
 
 <Section title="Experiencia Laboral">
-  <div class="flex flex-col gap-8">
+  <div class="flex flex-col gap-6 ml-3">
     {
       sortedExperience.map((item) => (
         <article>
-          <h3 class="text-xl font-semibold mb-2 text-gray-800">
-            {item.data.position}
-          </h3>
-          <div class="flex flex-row justify-between mb-2 text-xs md:text-sm font-bold text-gray-600">
+          <div class="flex flex-row gap-2 items-center mb-2">
+            <WorkDot class="text-gray-400" />
+            <h3 class="font-semibold text-gray-800 text-lg">{item.position}</h3>
+          </div>
+
+          <div class="flex flex-row font-bold justify-between mb-2 md:text-sm text-gray-500 text-xs">
             <a
-              href={item.data.site}
-              class="block mb-2 hover:transition-all hover:text-gray-900 hover:underline"
+              href={item.site}
+              class="block hover:transition-all hover:text-gray-900 hover:underline"
               target="_blank"
               rel="noopener noreferrer"
-              title={item.data.company}
+              title={item.company}
             >
-              {item.data.company}
+              {item.company}
             </a>
-            <span class="block ">
-              {new Date(item.data.from)
+
+            <span class="text-gray-600">
+              {new Date(item.from)
                 .toLocaleString("es-ES", { month: "short", year: "numeric" })
                 .replace(" de ", " ")
                 .replace(/^\w/, (c) => c.toUpperCase())}
               {" - "}
-              {new Date(item.data?.to ? item.data.to : "presente")
-                .toLocaleString("es-ES", { month: "short", year: "numeric" })
-                .replace(" de ", " ")
-                .replace(/^\w/, (c) => c.toUpperCase())}
+              {item.to
+                ? new Date(item.to)
+                    .toLocaleString("es-ES", {
+                      month: "short",
+                      year: "numeric",
+                    })
+                    .replace(" de ", " ")
+                    .replace(/^\w/, (c) => c.toUpperCase())
+                : "Presente"}
             </span>
-          </div>
-          <div class="prose-p prose-sm text-gray-600">
-            <item.Content />
           </div>
         </article>
       ))

@@ -1,0 +1,38 @@
+[
+  {
+    "position": "Desarrollador Front-End",
+    "company": "Lasec Technology Systems",
+    "site": "https://lasec.com.mx/",
+    "from": 1727769600000,
+    "to": 1743528960000,
+    "location": "Zacatecas",
+    "country": "México"
+  },
+  {
+    "position": "Academia de Desarrollo de Software",
+    "company": "Lasec Technology Systems",
+    "site": "https://lasec.com.mx/",
+    "from": 1719907200000,
+    "to": 1727717760000,
+    "location": "Zacatecas",
+    "country": "México"
+  },
+  {
+    "position": "Prácticas Profesionales",
+    "company": "Servicios de Salud de Zacatecas",
+    "site": "https://www.saludzac.gob.mx/home/",
+    "from": 1706774400000,
+    "to": 1717164000000,
+    "location": "Zacatecas",
+    "country": "México"
+  },
+  {
+    "position": "Servicio Social",
+    "company": "Servicios de Salud de Zacatecas",
+    "site": "https://www.saludzac.gob.mx/home/",
+    "from": 1577865600000,
+    "to": 1585580400000,
+    "location": "Zacatecas",
+    "country": "México"
+  }
+]
