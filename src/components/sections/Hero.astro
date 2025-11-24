@@ -5,26 +5,40 @@ import Contact from "@/components/sections/Contact.astro";
 ---
 
 <Section>
-  <article class="flex flex-col md:flex-row md:items-center md:justify-between md:gap-4">
-    <div>
-      <h1 class="prose-h1 prose-2xl md:text-4xl font-bold md:mb-4">Alejandro Tamayo Castro</h1>
-      <h2 class="prose-h2 prose-xl md:text-xl mb-1">FrontEnd Developer</h2>
-      <span class="flex flex-row items-center text-gray-500 gap-2 mb-2">
-        <World class="inline-block mr-2" />
-        Zacatecas, México
-      </span>
-      <div class="inline-flex align-baseline gap-4">
-        <Contact /> 
+  <article
+    class="flex flex-col md:flex-row md:items-center md:justify-between md:gap-4"
+  >
+    <!-- Name and Degree -->
+    <span>
+      <div class="">
+        <h1 class="prose-h1 prose-2xl md:text-4xl font-bold md:mb-4">
+          Alejandro Tamayo Castro
+        </h1>
+        <h2 class="prose-h2 md:text-xl font-semibold">
+          Técnico en Sistemas Digitales
+        </h2>
+        <h3 class="prose-h3 md:text-lg mb-1">FrontEnd Developer</h3>
       </div>
+      <!-- Location and Contact -->
+      <div class="inline-flex w-full items-center mt-4 gap-8">
+        <span class="inline-flex items-center text-gray-500 gap-2">
+          <World class="inline-block" />
+          Zacatecas, México
+        </span>
+        <span class="inline-flex gap-2 ml-4">
+          <Contact />
+        </span>
       </div>
-    </div>
-    <figure class="hidden md:block">
-      <img
-        src="/me.webp"
-        alt="Alejandro Tamayo Castro"
-        class="rounded-lg shadow-lg w-32 aspect-[1/1] object-fit"
-      />
-    </figure>
+    </span>
+    <span>
+      <!-- Profile Picture -->
+      <figure class="hidden md:block">
+        <img
+          src="/me.webp"
+          alt="Alejandro Tamayo Castro"
+          class="rounded-full shadow-lg w-64 aspect-[1/1] object-fit"
+        />
+      </figure>
+    </span>
   </article>
 </Section>
- 
