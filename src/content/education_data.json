@@ -1,0 +1,26 @@
+[
+    {
+        "school": {
+            "abreviation": "UPIIZ - IPN",
+            "name": "Unidad Profesional Interdisciplinaria de Ingeniería Campus Zacatecas IPN",
+            "site": "https://www.zacatecas.ipn.mx/"
+        },
+        "location": "Zacatecas",
+        "country": "México",
+        "degree": "Ingeniería en Sistemas Computacionales",
+        "from": 1597676400000,
+        "to": 1721203200000
+    },
+    {
+        "school":{
+            "abreviation":"CECyT 18 - IPN",
+            "name":"Centro de Estudios Científicos y Tecnológicos No. 18 'Zacatecas' IPN",
+            "site":"https://www.cecyt18.ipn.mx/"
+        },
+        "location":"Zacatecas",
+        "country":"México",
+        "degree":"Técnico en Programación",
+        "from":1502956800000,
+        "to":1594972800000
+    }
+]
