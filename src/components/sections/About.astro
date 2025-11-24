@@ -2,15 +2,29 @@
 import Section from "../Section.astro";
 ---
 
-<Section title="Sobre Mi" >
-  <p class="prose-p prose-sm md:prose-default">
-    Soy egresado de Ingeniería en Sistemas Computacionales por el Instituto
-  Politécnico Nacional, autodidacta, responsable y con una fuerte pasión por el
-  aprendizaje continuo. Fui desarrollador web en Lasec Technology Systems, donde
-  diseñé interfaces responsivas con DevExtreme, integré funcionalidades en
-  tiempo real mediante SignalR y colaboré en proyectos ASP.NET MVC bajo
-  metodologías ágiles. Esta oportunidad surgió tras mi participación en su
-  Academia de Frontend, en la que fui seleccionado para integrarme al equipo
-  gracias a mi desempeño.
-  </p>
+<Section title="Sobre Mi">
+  <article class="flex flex-col md:flex-row md:items-stretch md:gap-4 md:w-full">
+    <span>
+      <!-- Full Body Picture -->
+      <figure class="hidden md:block md:w-64">
+        <img
+          src="/me_full.webp"
+          alt="Alejandro Tamayo Castro"
+          class="rounded-xl shadow-lg w-64 aspect-[1/1.5] object-fit"
+        />
+      </figure>
+    </span>
+    <span>
+      <p class="prose-p prose md:prose-default md:w-full">
+        Soy egresado de Ingeniería en Sistemas Computacionales por el Instituto
+        Politécnico Nacional, autodidacta, responsable y con una fuerte pasión
+        por el aprendizaje continuo. Fui desarrollador web en Lasec Technology
+        Systems, donde diseñé interfaces responsivas con DevExtreme, integré
+        funcionalidades en tiempo real mediante SignalR y colaboré en proyectos
+        ASP.NET MVC bajo metodologías ágiles. Esta oportunidad surgió tras mi
+        participación en su Academia de Frontend, en la que fui seleccionado
+        para integrarme al equipo gracias a mi desempeño.
+      </p>
+    </span>
+  </article>
 </Section>
