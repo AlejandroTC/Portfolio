@@ -16,10 +16,15 @@ export const prerender = true;
       sortedEducation.map((item) => (
         <article>
           <div class="flex flex-row gap-2 items-center mb-2">
-            <School class="text-gray-800"/>
-            <h3 class="font-semibold text-gray-800 text-lg">{item.degree}</h3>
+            <School class="text-gray-800" />
+            <h3 class="font-semibold text-gray-800 text-lg">{item.major}</h3>
           </div>
-          <div class="flex flex-row justify-between mb-2 text-xs md:text-sm font-bold text-gray-500">
+          <div>
+            <p class="text-gray-700 text-lg font-bold md:text-base">
+              {item.status}
+            </p>
+          </div>
+          <div class="flex flex-row justify-between text-xs md:text-sm font-bold text-gray-500">
             <a
               href={item.school.site}
               class="block mb-2 hover:transition-all hover:text-gray-900 hover:underline"
@@ -27,7 +32,7 @@ export const prerender = true;
               rel="noopener noreferrer"
               title={item.school.name}
             >
-              {item.school.abreviation}
+              {item.school.abbreviation}
             </a>
             <span class="text-gray-600">
               {new Date(item.from)

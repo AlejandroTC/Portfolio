@@ -1,26 +1,35 @@
 [
-    {
-        "school": {
-            "abreviation": "UPIIZ - IPN",
-            "name": "Unidad Profesional Interdisciplinaria de Ingeniería Campus Zacatecas IPN",
-            "site": "https://www.zacatecas.ipn.mx/"
-        },
-        "location": "Zacatecas",
-        "country": "México",
-        "degree": "Ingeniería en Sistemas Computacionales",
-        "from": 1597676400000,
-        "to": 1721203200000
+  {
+    "school": {
+      "abbreviation": "UPIIZ - IPN",
+      "name": "Unidad Profesional Interdisciplinaria de Ingeniería Campus Zacatecas IPN",
+      "site": "https://www.zacatecas.ipn.mx/"
     },
-    {
-        "school":{
-            "abreviation":"CECyT 18 - IPN",
-            "name":"Centro de Estudios Científicos y Tecnológicos No. 18 'Zacatecas' IPN",
-            "site":"https://www.cecyt18.ipn.mx/"
-        },
-        "location":"Zacatecas",
-        "country":"México",
-        "degree":"Técnico en Programación",
-        "from":1502956800000,
-        "to":1594972800000
-    }
+    "location": "Zacatecas",
+    "country": "Mexico",
+
+    "degree": "Ingeniería",
+    "major": "Ingeniería en Sistemas Computacionales",
+
+    "status": "Graduado",
+    "from": 1597676400000,
+    "to": 1721203200000
+  },
+
+  {
+    "school": {
+      "abbreviation": "CECyT 18 - IPN",
+      "name": "Centro de Estudios Científicos y Tecnológicos No. 18 'Zacatecas' IPN",
+      "site": "https://www.cecyt18.ipn.mx/"
+    },
+    "location": "Zacatecas",
+    "country": "Mexico",
+
+    "degree": "Técnico",
+    "major": "Sistemas Digitales",
+
+    "status": "Titulado",
+    "from": 1502956800000,
+    "to": 1594972800000
+  }
 ]
